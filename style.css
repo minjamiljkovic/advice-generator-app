@@ -1,0 +1,115 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+:root {
+    /* ## Colors
+
+### Primary */
+
+--lightCyan: hsl(193, 38%, 86%);
+--neonGreen: hsl(150, 100%, 66%);
+
+/* ### Neutral */
+
+--grayishBlue: hsl(217, 19%, 38%);
+--darkGrayishBlue: hsl(217, 19%, 24%);
+--darkBlue: hsl(218, 23%, 16%);
+--smallText: 0.7em;
+/* rest of the vars */
+--backgroundColor: var(--grey-50);
+--textColor: var(--grey-900);
+--borderRadius: 0.25rem;
+--letterSpacing: 1px;
+--transition: 0.3s ease-in-out all;
+--max-width: 1120px;
+--fixed-width: 600px;
+--fluid-width: 90vw;
+}
+/* Globals */
+body {
+    background: var(--darkBlue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.75;
+    color: var(--textColor);
+    /* position: absolute; */
+  }
+p {
+    margin-bottom: 24px;
+    max-width: 40em;
+    font-size: 24px;
+  }
+
+/* gen */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10% 15%;
+    flex-wrap: nowrap;
+    background-color: var(--darkGrayishBlue);
+    border-radius: 14px;
+}
+.numb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    color: var(--neonGreen); 
+    text-transform: uppercase;
+    font-size: 20px;  
+}
+h1{
+    /* color: var(--neonGreen); */
+    font-size: 20px;
+
+
+}
+.advice-number {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: var(--neonGreen); 
+    text-transform: uppercase; */
+    font-size: 20px;
+}
+.advice {
+    width: 85%;
+    color: var(--lightCyan);
+}
+.dice {
+    position: relative;
+    align-items: center;
+    border-radius: 50%;
+    bottom: -25px;
+}
+.btn {
+    cursor: pointer;
+    background: var(--neonGreen);
+    border: transparent;
+    transition: var(--transition);
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+  }
+  .btn:hover {
+    box-shadow: 0px 1px 16px var(--neonGreen);
+  }
+  .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+}
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
